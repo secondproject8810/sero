@@ -1,0 +1,36 @@
+export default {
+  name: 'seroapp',
+  slug: 'seroapp',
+  version: '1.0.0',
+  orientation: 'portrait',
+  icon: './assets/seroimg.png',
+  userInterfaceStyle: 'light',
+  splash: {
+    image: './assets/seroimg.png',
+    resizeMode: 'contain',
+    backgroundColor: '#ffffff'
+  },
+  assetBundlePatterns: [
+    '**/*'
+  ],
+  ios: {
+    supportsTablet: true
+  },
+  android: {
+    adaptiveIcon: {
+      foregroundImage: './assets/seroimg.png',
+      backgroundColor: '#ffffff'
+    },
+    package: 'com.seroapp.app',
+    versionCode: 1
+  },
+  web: {
+    favicon: './assets/seroimg.png'
+  },
+  entryPoint: './index.js',
+  extra: {
+    eas: {
+      projectId: 'cbda0e15-f3a1-4bce-95f3-cd366553249e'
+    }
+  }
+}; 
